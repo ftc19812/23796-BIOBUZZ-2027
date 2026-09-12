@@ -1,4 +1,4 @@
-# 2026-2027-DECODE <br>
+# 2026-2027-BIOBUZZ <br>
 Where we will store our code for the 2026 - 2027 season. And also where we shall win our first championships! Heck yeah! <br>
 
 ## Important Info <br>
