@@ -47,7 +47,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  *
  */
-@TeleOp(name = "sigmasigmatestop", group = "Robot")
+@TeleOp(name = "Drive Train TeleOp", group = "Robot")
 public class DrivetrainTest extends OpMode {
     // This declares the four motors needed
     private DcMotor frontLeftDrive;

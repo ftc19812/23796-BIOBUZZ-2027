@@ -19,6 +19,12 @@ public class ServoTest extends OpMode {
 
     @Override
     public void loop() {
+        // a - increment by 0.1
+        // b - increment by 0.01
+        // x - set servo to 1
+        // y - set servo to 0
+        // right bumper - track a specific position
+        // left bumper - set the servo to the tracked position (default 0)
         if (gamepad1.aWasPressed()) {
             currentPosition += 0.1;
         }
@@ -37,8 +43,21 @@ public class ServoTest extends OpMode {
         if (gamepad1.rightBumperWasPressed()) {
             currentPosition = trackPos;
         }
+
+
         testServo.setPosition(currentPosition);
 
+        telemetry.addLine("a - increment by 0.1\n" +
+                "b - increment by 0.01\n" +
+                "x - set servo to 1\n" +
+                "y - set servo to 0\n" +
+                "right bumper - track a specific position\n" +
+                "left bumper - set the servo to the tracked position (default 0)");
+        telemetry.addLine(""); // add a space to seperate
+        telemetry.addData("Current Position", currentPosition);
+        telemetry.addData("Tracked Position", trackPos);
+
+        telemetry.update();
 
     }
 

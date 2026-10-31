@@ -27,26 +27,36 @@ public class FourWheelTest extends OpMode {
 
         if (gamepad1.a) {
             frontLeft.setPower(0.2);
+            telemetry.addLine("Front Left: Active");
         } else {
             frontLeft.setPower(0.0);
+            telemetry.addLine("Front Left: Inactive");
         }
 
         if (gamepad1.b) {
             frontRight.setPower(0.2);
+            telemetry.addLine("Front Right: Active");
         } else {
             frontRight.setPower(0.0);
+            telemetry.addLine("Front Right: Inactive");
         }
 
         if (gamepad1.x) {
             backLeft.setPower(0.2);
+            telemetry.addLine("Back Left: Active");
         } else {
             backLeft.setPower(0.0);
+            telemetry.addLine("Back Left: Inactive");
         }
 
         if (gamepad1.y) {
             backRight.setPower(0.2);
+            telemetry.addLine("Back Right: Active");
         } else {
             backRight.setPower(0.0);
+            telemetry.addLine("Back Right: Inactive");
         }
+
+        telemetry.update();
     }
 }
